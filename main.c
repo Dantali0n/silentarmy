@@ -1181,12 +1181,18 @@ unsigned scan_platform(cl_platform_id plat, cl_uint *nr_devs_total,
     unsigned		found = 0;
     unsigned		i;
     if (do_list_devices)
-	print_platform_info(plat);
+	   print_platform_info(plat);
     status = clGetDeviceIDs(plat, typ, 0, NULL, &nr_devs);
-    if (status != CL_SUCCESS)
-	fatal("clGetDeviceIDs (%d)\n", status);
+
+    // With multiple platforms, valid devices may not be on current platform
+    if (status == CL_DEVICE_NOT_FOUND){
+        debug("Device not found: clGetDeviceIDs (%d)\n", status);
+        return 0;
+    }
+    else if (status != CL_SUCCESS)
+        fatal("clGetDeviceIDs (%d)\n", status);
     if (nr_devs == 0)
-	return 0;
+	   return 0;
     devices = (cl_device_id *)malloc(nr_devs * sizeof (*devices));
     status = clGetDeviceIDs(plat, typ, nr_devs, devices, NULL);
     if (status != CL_SUCCESS)
