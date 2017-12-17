@@ -23,7 +23,6 @@ ${OBJ} : ${INCLUDES}
 
 _kernel.h : input.cl param.h
 	cpp $< ocl.code
-	printf "\x00" >> ocl.code
 	xxd -i ocl.code $@
 
 test : sa-solver
