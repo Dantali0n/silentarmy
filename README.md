@@ -1,12 +1,10 @@
-**This project is currently no longer maintained as of 2017-12-03. -Marc**
-
 # SILENTARMY
+SILENTARMY is a free open source [Zcash](https://z.cash) miner for Linux originally maintained and developed by [Marc Bevand](http://zorinaq.com).
+SILENTARMY has multi-GPU and [Stratum](https://github.com/str4d/zips/blob/77-zip-stratum/drafts/str4d-stratum/draft1.rst) support. It is written in OpenCL and has been tested
+on AMD/Nvidia/Intel GPUs, Xeon Phi, and more. SILENTARMY is being maintainted but no new features or major performance improvements should be expected.
 
-Official site: https://github.com/mbevand/silentarmy
-
-SILENTARMY is a free open source [Zcash](https://z.cash) miner for Linux
-with multi-GPU and [Stratum](https://github.com/str4d/zips/blob/77-zip-stratum/drafts/str4d-stratum/draft1.rst) support. It is written in OpenCL and has been tested
-on AMD/Nvidia/Intel GPUs, Xeon Phi, and more.
+Original site: https://github.com/mbevand/silentarmy  
+Official site: https://github.com/Dantali0n/silentarmy  
 
 After compiling SILENTARMY, list the available OpenCL devices:
 
@@ -275,9 +273,10 @@ supports Equihash parameters 200,9.
 
 # Author
 
-Marc Bevand -- [http://zorinaq.com](http://zorinaq.com)
+Original author: Marc Bevand -- [http://zorinaq.com](http://zorinaq.com)  
+Current maintainer: [Dantalion](https://dantalion.nl)  
 
-Donations welcome: t1cVviFvgJinQ4w3C2m2CfRxgP5DnHYaoFC
+Donations welcome: t1M3HPpWNqJH82t1ChMWd53nZSvhMiqdL2p
 
 # Thanks
 
@@ -292,10 +291,24 @@ in alphabetical order:
 * poiuty
 * solardiz
 
-# License
+# Licensing
+This version of SILENTARMY is sublicensed under MIT all files in their state before or during commit [c6a9ca85a81708589c904d2cbf3c665cd7ce5fa0](https://github.com/Dantali0n/silentarmy/tree/c6a9ca85a81708589c904d2cbf3c665cd7ce5fa0) are licensed under a single MIT licensed with attributed copyright to Marc Bevand. All files after commit c6a9ca85a81708589c904d2cbf3c665cd7ce5fa0 are sublicensed under the original MIT license and a secondary MIT license with attributed copyright to Dantali0n. This Sublicense is necessary as any new contributions to SILENTARMY are the work and decision of my Dantali0n and the orignal author might not condone or approve of these changes.
+
+## License
 
 The MIT License (MIT)
 Copyright (c) 2016 Marc Bevand
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Sublicense
+
+The MIT License (MIT)
+Copyright (c) 2018 Dantali0n
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
