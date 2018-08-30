@@ -8,6 +8,6 @@ os:
 before_install:
 - echo $LANG
 - echo $LC_ALL
-- sudo apt install beignet-opencl-icd 
+- apt-cache search opencl
 script:
 - make OPENCL_HEADERS=/usr/lib/x86_64-linux-gnu/beignet/include/ LIBOPENCL=/usr/lib/x86_64-linux-gnu/beignet/ LDLIBS="-lcl -lrt"
