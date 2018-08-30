@@ -6,7 +6,7 @@ compiler:
 os:
 - linux
 before_install:
-- echo $LANG
-- echo $LC_ALL
+- sudo apt-get -qq update
+- sudo apt-get install pocl
 script:
 - make && make test
