@@ -6,6 +6,7 @@ compiler:
 os:
 - linux
 before_install:
-- sudo apt install beignet-opencl-icd
+- sudo apt-get update
+- sudo apt-get install beignet-opencl-icd
 script:
 - make && make test
