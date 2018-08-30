@@ -33,6 +33,7 @@ test : sa-solver
 	    echo "Test: success"; \
 	else \
 	    echo "$$res\nTest: FAILED" | cut -c 1-75 >&2; \
+	    exit 1; \
 	fi
 #	When compiling with NR_ROWS_LOG != 20, the solutions it finds are
 #	different: testing/sols-100
