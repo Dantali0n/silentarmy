@@ -7,6 +7,6 @@ os:
 - linux
 before_install:
 - sudo apt-get update
-- sudo apt-get install beignet-opencl-icd
+- sudo apt-get install beignet-opencl-icd opencl-headers
 script:
 - make && make test
